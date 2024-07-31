@@ -1,112 +1,68 @@
-import React, { useEffect, useState, useContext } from 'react';
-import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable no-shadow */
+import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
-import PropTypes from 'prop-types';
-import { ThemeContext } from 'styled-components';
-// import Fade from 'react-reveal';
-import Header from './Header';
-import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
-import '../css/experience.css';
+import '../css/experience.css'; // Custom CSS file for additional styling
 
-const styles = {
-  ulStyle: {
-    listStylePosition: 'outside',
-    paddingLeft: 20,
-  },
-  subtitleContainerStyle: {
-    marginTop: 10,
-    marginBottom: 10,
-  },
-  subtitleStyle: {
-    display: 'inline-block',
-  },
-  inlineChild: {
-    display: 'inline-block',
-  },
-  itemStyle: {
-    marginBottom: 10,
-  },
-};
-
-function Experience(props) {
-  const theme = useContext(ThemeContext);
-  const { header } = props;
+function Experience() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.experiences, {
+    fetch('/profile/experiences.json', { // Adjust the path as necessary
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res.experiences))
-      .catch((err) => err);
+      .catch((err) => console.error(err));
   }, []);
 
   return (
     <>
-      <Header title={header} />
-
-      {data
-        ? (
-          <div className="section-content-container">
-            <Container>
-              <Timeline
-                lineColor={theme.timelineLineColor}
+      <Container>
+        <h1>Experience</h1>
+        {data ? (
+          <div className="timeline">
+            {data.map((item, index) => (
+              <div
+                key={item.title + item.dateText}
+                className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}
               >
-                {data.map((item) => (
-                  // <Fade >
-                  <TimelineItem
-                    key={item.title + item.dateText}
-                    dateText={item.dateText}
-                    dateInnerStyle={{ background: theme.accentColor }}
-                    style={styles.itemStyle}
-                    bodyContainerStyle={{ color: theme.color }}
-                  >
-                    <h2 className="item-title">
-                      {item.title}
-                    </h2>
-                    <div style={styles.subtitleContainerStyle}>
-                      <h4 style={{ ...styles.subtitleStyle, color: theme.accentColor }}>
-                        {item.subtitle}
-                      </h4>
-                      {item.workType && (
-                        <h5 style={styles.inlineChild}>
-                    &nbsp;·
-                          {' '}
-                          {item.workType}
-                        </h5>
-                      )}
-                    </div>
-                    <ul style={styles.ulStyle}>
-                      {item.workDescription.map((point) => (
-                        <div key={point}>
-                          <li>
-                            <ReactMarkdown
-                              children={point}
-                              components={{
-                                p: 'span',
-                              }}
-                            />
-                          </li>
-                          <br />
-                        </div>
-                      ))}
-                    </ul>
-                  </TimelineItem>
-                  // </Fade>
-                ))}
-              </Timeline>
-            </Container>
+                <div className="timeline-icon">
+                  {/* Optionally, you can add an icon image here */}
+                  {/* <img src="path-to-icon" alt="icon" className="timeline-icon-img" /> */}
+                </div>
+                <div className="timeline-content">
+                  <span className="timeline-date">{item.dateText}</span>
+                  <h2 className="timeline-title">{item.title}</h2>
+                  <h4 className="timeline-subtitle">{item.subtitle}</h4>
+                  {item.workType && (
+                    <h5 className="timeline-work-type">
+                      &nbsp;·&nbsp;
+                      {item.workType}
+                    </h5>
+                  )}
+                  <ul className="timeline-text">
+                    {item.workDescription.map((point, index) => (
+                      <li key={index}>
+                        <ReactMarkdown
+                          children={point}
+                          components={{ p: 'span' }}
+                        />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
           </div>
-        ) : <FallbackSpinner /> }
+        ) : (
+          <FallbackSpinner />
+        )}
+      </Container>
     </>
   );
 }
-
-Experience.propTypes = {
-  header: PropTypes.string.isRequired,
-};
 
 export default Experience;

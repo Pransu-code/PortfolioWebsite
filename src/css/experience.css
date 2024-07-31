@@ -1,9 +1,133 @@
-.entry .body{
-    margin: 0 0 1em;
-}
-
-@media only screen and (max-width: 768px) {
-    .item-title {
-        margin-top: 10px !important;
+/* General styling for the Experience component */
+.section-content-container {
+    margin: 20px 0;
+  }
+  
+  /* Header styling */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Timeline styling */
+  .timeline {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-item:hover {
+    background: #353535; /* Light blue background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+  .timeline-item.left {
+    right: 50%;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+  }
+  
+  .timeline-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 3px solid #3498db;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #3498db;
+    top: 12px;
+    margin-left: -20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .timeline-icon-img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+  
+  .timeline-content {
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  .timeline-title {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .timeline-subtitle {
+    font-size: 1em;
+    color: #777;
+    margin: 0;
+  }
+  
+  .timeline-text {
+    margin: 10px 0;
+    font-weight: 450;
+    align-items: justify;
+  }
+  
+  .timeline-date {
+    display: block;
+    font-size: 0.9em;
+    color: #969393;
+  }
+  
+  /* Additional styling for responsive design */
+  @media (max-width: 768px) {
+    .timeline-item {
+      width: 100%;
+      left: 0;
+      right: 0;
     }
-}
+  
+    .timeline-item.left,
+    .timeline-item.right {
+      left: 0;
+      right: 0;
+    }
+  
+    .timeline-icon {
+      left: 50%;
+      margin-left: -20px;
+    }
+  
+    .timeline-content {
+      padding: 10px 20px;
+    }
+  }
+  

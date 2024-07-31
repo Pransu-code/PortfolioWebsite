@@ -1,0 +1,78 @@
+.custom-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .custom-timeline::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .custom-timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-timeline-item:nth-child(odd) {
+    left: 0;
+  }
+  
+  .custom-timeline-item:nth-child(even) {
+    left: 50%;
+  }
+  
+  .custom-timeline-date {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 3px solid #3498db;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #3498db;
+    top: 15px;
+    left: 50%;
+    margin-left: -25px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-timeline-content {
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  .custom-timeline-item h2 {
+    margin: 0;
+  }
+  
+  .custom-timeline-item h4 {
+    margin: 10px 0;
+  }
+  
+  .custom-timeline-item ul {
+    list-style-position: outside;
+    padding-left: 20px;
+  }
+  
+  .custom-timeline-item li {
+    margin-bottom: 10px;
+  }
+  
