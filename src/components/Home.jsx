@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
-import Fade from 'react-reveal';
+// import Fade from 'react-reveal';
 import endpoints from '../constants/endpoints';
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
@@ -36,26 +36,26 @@ function Home() {
   }, []);
 
   return data ? (
-    <Fade>
-      <div className="homediv">
-        <div className="content" style={styles.mainContainer}>
-          <h1 className="heading" style={styles.nameStyle}>
-            {data?.name}
-          </h1>
-          <div style={{ flexDirection: 'row' }}>
-            <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
-            <Typewriter
-              options={{
-                loop: true,
-                autoStart: true,
-                strings: data?.roles,
-              }}
-            />
-          </div>
-          <Social />
+  // <Fade>
+    <div className="homediv">
+      <div className="content" style={styles.mainContainer}>
+        <h1 className="heading" style={styles.nameStyle}>
+          {data?.name}
+        </h1>
+        <div style={{ flexDirection: 'row' }}>
+          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
+          <Typewriter
+            options={{
+              loop: true,
+              autoStart: true,
+              strings: data?.roles,
+            }}
+          />
         </div>
+        <Social />
       </div>
-    </Fade>
+    </div>
+  // </Fade>
   ) : (
     <FallbackSpinner />
   );
