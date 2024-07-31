@@ -8,6 +8,8 @@ import AppContext from './AppContext';
 import MainApp from './MainApp';
 import GlobalStyles from './theme/GlobalStyles';
 import { lightTheme, darkTheme } from './theme/themes';
+// import 'matchmedia-polyfill';
+// import 'matchmedia-polyfill/matchMedia.addListener';
 
 function App() {
   window.matchMedia = null;
