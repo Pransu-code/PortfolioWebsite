@@ -13,7 +13,7 @@
 
 ## Demo
 
-To view the demo: **[click here]()**
+To view the demo: **[click here](https://pleasebuildhoja.netlify.app/)**
 
 ## Why do you need a portfolio? ☝️
 
