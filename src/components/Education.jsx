@@ -8,6 +8,8 @@ import endpoints from '../constants/endpoints';
 import Header from './Header';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/education.css';
+import 'matchmedia-polyfill';
+import 'matchmedia-polyfill/matchMedia.addListener';
 
 function Education(props) {
   const theme = useContext(ThemeContext);
