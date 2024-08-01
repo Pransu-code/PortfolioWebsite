@@ -5,23 +5,24 @@
   
   /* Header styling */
   h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
-    text-align: center;
+    /* text-align: center; */
   }
   
   /* Timeline styling */
   .timeline {
     position: relative;
-    max-width: 500px;
+    max-width: 650px;
     margin: 0 auto;
   }
   
+
   .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
+    width: 5px;
     background-color: #ddd;
     top: 0;
     bottom: 0;
@@ -33,13 +34,13 @@
     padding: 10px 40px;
     position: relative;
     background: #f9f9f9;
-    border-radius: 6px;
+    border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(233, 233, 233, 0.1);
   }
   
   .timeline-item:hover {
-    background: #353535; /* Light blue background on hover */
+    background: #dfdede; /* Light blue background on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
     transform: translateY(-5px); /* Slight lift effect on hover */
   }
@@ -64,11 +65,11 @@
     font-size: 20px;
     color: #3498db;
     top: 12px;
-    margin-left: -20px;
+    margin-left: 2px;
     z-index: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
   }
   
   .timeline-icon-img {
@@ -80,15 +81,18 @@
   .timeline-content {
     padding: 20px;
     background: #fff;
-    position: relative;
+    /* position: relative; */
+    /* align-items: left; */
     border-radius: 6px;
   }
   
   .timeline-title {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 0;
   }
-  
+  .timeline-work-type {
+    font-size: 1em;
+  }
   .timeline-subtitle {
     font-size: 1em;
     color: #777;
@@ -98,7 +102,6 @@
   .timeline-text {
     margin: 10px 0;
     font-weight: 450;
-    align-items: justify;
   }
   
   .timeline-date {

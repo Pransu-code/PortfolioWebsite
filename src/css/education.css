@@ -2,7 +2,7 @@
 .timeline {
   position: relative;
   max-width: 900px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .timeline::after {
@@ -17,11 +17,11 @@
 }
 
 .timeline-item {
-  padding: 10px 40px;
+  padding: 50px 40px;
   position: relative;
   background: #f9f9f9;
   border-radius: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .timeline-item:hover {

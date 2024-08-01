@@ -17,7 +17,7 @@ function ThemeToggler(props) {
                 onClick();
               }}
               checked={isDarkMode}
-              size={50}
+              size={0}
             />
           </div>
         )}

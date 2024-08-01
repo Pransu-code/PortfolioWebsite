@@ -100,25 +100,28 @@ const Education = () => {
   }, []);
 
   return (
-    <div className="timeline">
-      {educationData.map((item, index) => (
-        <div className="timeline-item" key={index}>
-          <div className="timeline-icon">
-            <img
-              src={process.env.PUBLIC_URL + item.icon.src}
-              alt={item.cardTitle}
-              className="timeline-icon-img"
-            />
+    <>
+      <h1>Education</h1>
+      <div className="timeline">
+        {educationData.map((item, index) => (
+          <div className="timeline-item" key={index}>
+            <div className="timeline-icon">
+              <img
+                src={process.env.PUBLIC_URL + item.icon.src}
+                alt={item.cardTitle}
+                className="timeline-icon-img"
+              />
+            </div>
+            <div className="timeline-content">
+              <h3 className="timeline-title">{item.cardTitle}</h3>
+              <h4 className="timeline-subtitle">{item.cardSubtitle}</h4>
+              <p className="timeline-text">{item.cardDetailedText}</p>
+              <span className="timeline-date">{item.title}</span>
+            </div>
           </div>
-          <div className="timeline-content">
-            <h3 className="timeline-title">{item.cardTitle}</h3>
-            <h4 className="timeline-subtitle">{item.cardSubtitle}</h4>
-            <p className="timeline-text">{item.cardDetailedText}</p>
-            <span className="timeline-date">{item.title}</span>
-          </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 };
 
