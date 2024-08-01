@@ -1,7 +1,147 @@
 {
     "projects" : [
         {
+            "image" : "images/projects/UMAP.jpg",
+            "title": "Marathon Time Prediction",
+            "bodyText": "- Developed a conceptual design with DFDs for a case-based machine learning model predicting marathon times.\n -  Implemented an algorithm for marathon time prediction using runner's data and historical performance.\n - Conducted experiments using Jupyter Notebook with datasets from Strava, Berlin Marathon, and other races, employing various regression models.\n - Evaluated models like Ridge Regression and Random Forest, with Random Forest achieving the best performance in predicting marathon times.\n - Compared Linear Regression and Gradient Boosting Machine (GBM) models for half-marathon predictions, finding GBM to be more accurate.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Pransu-code/MarathonPrediction"
+                },
+                {
+                    "text": "Not-Live",
+                    "href": "https://github.com/Pransu-code/MarathonPrediction"
+                }
+            ],
+            "tags" : [
+                "Python",
+                "Jupiter Notebook",
+                "Machine Learning",
+                "Numpy",
+                "Pandas",
+                "matplotlib.pyplot",
+                "sklearn",
+                "UMAP",
+                "Random Forest Model",
+                "GBM Model",
+                "Linear Model",
+                "Regression"
+            ]
+        },
+        {
+            "image" : "images/projects/1.png",
+            "title": "Minimal Banking Website",
+            "bodyText": "- Bankist is a minimalistic, feature-rich web application for seamless banking.\n -  Built using JavaScript, HTML, and CSS for robust functionality.\n - Offers an aesthetically pleasing and user-friendly experience.\n - Allows users to open accounts and manage their finances efficiently.\n - Supports various banking operations through an intuitive interface.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Pransu-code/Bankist-Website"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://bankistportal.netlify.app/"
+                }
+            ],
+            "tags" : [
+                "JavaScript",
+                "Portfolio",
+                "HTML",
+                "CSS",
+                "UI/UX"
+            ]
+        },
+        {
+            "image" : "images/projects/confluence.png",
+            "title": "Confluence Club Management System",
+            "bodyText": "-  A comprehensive web application designed to streamline the management of cultural clubs and events on campus.\n - Dedicated section for managing sponsorship information & Online registration.\n - facilitating better collaboration with sponsors resulting in increased funding support by approx 10 times.\n - Led to higher participation rates in every campus events",
+            "links": [
+                
+                {
+                    "text": "Live",
+                    "href": "https://conflu-website-frontend.vercel.app/"
+                },
+                {
+                    "text": "GitHub",
+                    "href": ""
+                }
+            ],
+            "tags" : [
+                "Reactjs",
+                "Nodejs",
+                "Expressjs",
+                "MongoDB",
+                "Firebase",
+                "JavaScript",
+                "MaterialUI",
+                "HTML CSS"
+            ]
+        },
+        {
+            "image" : "images/projects/Home.png",
+            "title": "Fund Fusion",
+            "bodyText": "- Fundfusion is a feature-rich banking application for efficient financial management.\n -  Enables money transfers, loan requests, fund deposits and withdrawals, and transaction tracking.\n - Showcases advanced JavaScript, HTML, and CSS for a dynamic and interactive experience.\n - Includes user registration and authentication for secure access.\n - Features a user-friendly interface for seamless banking operations.\n - Use Demo users & pins as #user : js pin : 1111 #user : jd pin : 2222",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Pransu-code/FundFusion"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://fund-fusion.netlify.app/"
+                }
+            ],
+            "tags" : [
+                "JavaScript",
+                "HTML CSS",
+                "Frontend",
+                "Backend",
+                "UI/UX",
+                "json"
+            ]
+        },
+        {
             "image" : "images/projects/Dev.png",
+            "title": "Dev Portfolio",
+            "bodyText": "- Developer portfolio website built with React.\n -  Customizable and dynamic, allowing easy updates to data and images.\n - Includes support for dark mode.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/Pransu-code/PortfolioWebsite"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://pransu-portfolio.netlify.app/"
+                }
+            ],
+            "tags" : [
+                "React",
+                "Portfolio",
+                "JavaScript"
+            ]
+        },
+        {
+            "image" : "images/projects/3.png",
+            "title": "Dev Portfolio",
+            "bodyText": "- Developer portfolio website built with React.\n -  Customizable and dynamic, allowing easy updates to data and images.\n - Includes support for dark mode.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": ""
+                },
+                {
+                    "text": "Live",
+                    "href": ""
+                }
+            ],
+            "tags" : [
+                "React",
+                "Portfolio",
+                "JavaScript"
+            ]
+        },
+        {
+            "image" : "images/projects/2.png",
             "title": "Dev Portfolio",
             "bodyText": "- Developer portfolio website built with React.\n -  Customizable and dynamic, allowing easy updates to data and images.\n - Includes support for dark mode.",
             "links": [
