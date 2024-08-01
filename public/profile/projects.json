@@ -122,42 +122,45 @@
         },
         {
             "image" : "images/projects/3.png",
-            "title": "Dev Portfolio",
-            "bodyText": "- Developer portfolio website built with React.\n -  Customizable and dynamic, allowing easy updates to data and images.\n - Includes support for dark mode.",
+            "title": "Dice Game",
+            "bodyText": "- Multiplayer Mechanics: Supports two players on the same device, with player roles and turn management controlled programmatically.\n -  Game Functionality: Implements dice roll (1-6), score accumulation, and player switching logic with options to reset, roll, or hold.\n - Win Condition: Utilizes score tracking to determine the winner as the first player to reach 100, including automatic player switch on rolling a 1.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": ""
+                    "href": "https://github.com/Pransu-code/PigGame"
                 },
                 {
                     "text": "Live",
-                    "href": ""
+                    "href": "https://multiplayerpiggame.netlify.app/"
                 }
             ],
             "tags" : [
-                "React",
-                "Portfolio",
-                "JavaScript"
+                "JavaScript",
+                "HTML CSS",
+                "Frontend",
+                "Backend",
+                "UI/UX",
+                "json"
             ]
         },
         {
             "image" : "images/projects/2.png",
             "title": "Dev Portfolio",
-            "bodyText": "- Developer portfolio website built with React.\n -  Customizable and dynamic, allowing easy updates to data and images.\n - Includes support for dark mode.",
+            "bodyText": "- Developed Guess My Number Game: Created a web-based game using JavaScript, HTML, and CSS that challenges players to guess a randomly generated number within a specified range.\n - Implemented Key Features: Incorporated random number generation, user input validation, feedback on guesses, score tracking, and reset functionality.\n - Technical Skills Demonstrated: Showcased proficiency in front-end web development technologies, including JavaScript for dynamic content, HTML for structure, and CSS for styling.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": ""
+                    "href": "https://github.com/Pransu-code/GuessMyNumber"
                 },
                 {
                     "text": "Live",
-                    "href": ""
+                    "href": "https://guess-my-number-65.netlify.app/"
                 }
             ],
             "tags" : [
-                "React",
-                "Portfolio",
-                "JavaScript"
+                "JavaScript",
+                "HTML",
+                "CSS"
             ]
         }
     ]
